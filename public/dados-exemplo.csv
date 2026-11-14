@@ -1,0 +1,201 @@
+﻿id_venda,data,produto,categoria,regiao,quantidade,preco_unitario
+1,2025-01-01,Classic,Lanche,Norte,2,29.90
+2,2025-01-08,Milk-shake,Sobremesa,Oeste,5,18.90
+3,2025-01-15,Batata frita,Acompanhamento,Leste,3,13.90
+4,2025-01-22,Refrigerante,Bebida,Sul,1,7.50
+5,2025-01-01,Cheeseburger,Lanche,Norte,4,34.90
+6,2025-01-08,Classic,Lanche,Oeste,2,29.90
+7,2025-01-15,Milk-shake,Sobremesa,Leste,5,18.90
+8,2025-01-22,Batata frita,Acompanhamento,Leste,3,13.90
+9,2025-01-01,Refrigerante,Bebida,Sul,1,7.50
+10,2025-01-08,Cheeseburger,Lanche,Norte,4,34.90
+11,2025-01-15,Classic,Lanche,Oeste,2,29.90
+12,2025-01-22,Milk-shake,Sobremesa,Leste,5,18.90
+13,2025-01-01,Batata frita,Acompanhamento,Sul,3,13.90
+14,2025-01-08,Refrigerante,Bebida,Norte,1,7.50
+15,2025-01-15,Cheeseburger,Lanche,Norte,4,34.90
+16,2025-01-22,Classic,Lanche,Oeste,2,29.90
+17,2025-01-01,Milk-shake,Sobremesa,Leste,5,18.90
+18,2025-02-08,Batata frita,Acompanhamento,Sul,3,13.90
+19,2025-02-15,Refrigerante,Bebida,Norte,1,7.50
+20,2025-02-22,Cheeseburger,Lanche,Oeste,4,34.90
+21,2025-02-01,Classic,Lanche,Leste,2,29.90
+22,2025-02-08,Milk-shake,Sobremesa,Leste,5,18.90
+23,2025-02-15,Batata frita,Acompanhamento,Sul,3,13.90
+24,2025-02-22,Refrigerante,Bebida,Norte,1,7.50
+25,2025-02-01,Cheeseburger,Lanche,Oeste,4,34.90
+26,2025-02-08,Classic,Lanche,Leste,2,29.90
+27,2025-02-15,Milk-shake,Sobremesa,Sul,5,18.90
+28,2025-02-22,Batata frita,Acompanhamento,Norte,3,13.90
+29,2025-02-01,Refrigerante,Bebida,Norte,1,7.50
+30,2025-02-08,Cheeseburger,Lanche,Oeste,4,34.90
+31,2025-02-15,Classic,Lanche,Leste,2,29.90
+32,2025-02-22,Milk-shake,Sobremesa,Sul,5,18.90
+33,2025-02-01,Batata frita,Acompanhamento,Norte,3,13.90
+34,2025-02-08,Refrigerante,Bebida,Oeste,1,7.50
+35,2025-03-15,Cheeseburger,Lanche,Leste,4,34.90
+36,2025-03-22,Classic,Lanche,Leste,2,29.90
+37,2025-03-01,Milk-shake,Sobremesa,Sul,5,18.90
+38,2025-03-08,Batata frita,Acompanhamento,Norte,3,13.90
+39,2025-03-15,Refrigerante,Bebida,Oeste,1,7.50
+40,2025-03-22,Cheeseburger,Lanche,Leste,4,34.90
+41,2025-03-01,Classic,Lanche,Sul,2,29.90
+42,2025-03-08,Milk-shake,Sobremesa,Norte,5,18.90
+43,2025-03-15,Batata frita,Acompanhamento,Norte,3,13.90
+44,2025-03-22,Refrigerante,Bebida,Oeste,1,7.50
+45,2025-03-01,Cheeseburger,Lanche,Leste,4,34.90
+46,2025-03-08,Classic,Lanche,Sul,2,29.90
+47,2025-03-15,Milk-shake,Sobremesa,Norte,5,18.90
+48,2025-03-22,Batata frita,Acompanhamento,Oeste,3,13.90
+49,2025-03-01,Refrigerante,Bebida,Leste,1,7.50
+50,2025-03-08,Cheeseburger,Lanche,Leste,4,34.90
+51,2025-04-15,Classic,Lanche,Sul,2,29.90
+52,2025-04-22,Milk-shake,Sobremesa,Norte,5,18.90
+53,2025-04-01,Batata frita,Acompanhamento,Oeste,3,13.90
+54,2025-04-08,Refrigerante,Bebida,Leste,1,7.50
+55,2025-04-15,Cheeseburger,Lanche,Sul,4,34.90
+56,2025-04-22,Classic,Lanche,Norte,2,29.90
+57,2025-04-01,Milk-shake,Sobremesa,Norte,5,18.90
+58,2025-04-08,Batata frita,Acompanhamento,Oeste,3,13.90
+59,2025-04-15,Refrigerante,Bebida,Leste,1,7.50
+60,2025-04-22,Cheeseburger,Lanche,Sul,4,34.90
+61,2025-04-01,Classic,Lanche,Norte,2,29.90
+62,2025-04-08,Milk-shake,Sobremesa,Oeste,5,18.90
+63,2025-04-15,Batata frita,Acompanhamento,Leste,3,13.90
+64,2025-04-22,Refrigerante,Bebida,Leste,1,7.50
+65,2025-04-01,Cheeseburger,Lanche,Sul,4,34.90
+66,2025-04-08,Classic,Lanche,Norte,2,29.90
+67,2025-04-15,Milk-shake,Sobremesa,Oeste,5,18.90
+68,2025-05-22,Batata frita,Acompanhamento,Leste,3,13.90
+69,2025-05-01,Refrigerante,Bebida,Sul,1,7.50
+70,2025-05-08,Cheeseburger,Lanche,Norte,4,34.90
+71,2025-05-15,Classic,Lanche,Norte,2,29.90
+72,2025-05-22,Milk-shake,Sobremesa,Oeste,5,18.90
+73,2025-05-01,Batata frita,Acompanhamento,Leste,3,13.90
+74,2025-05-08,Refrigerante,Bebida,Sul,1,7.50
+75,2025-05-15,Cheeseburger,Lanche,Norte,4,34.90
+76,2025-05-22,Classic,Lanche,Oeste,2,29.90
+77,2025-05-01,Milk-shake,Sobremesa,Leste,5,18.90
+78,2025-05-08,Batata frita,Acompanhamento,Leste,3,13.90
+79,2025-05-15,Refrigerante,Bebida,Sul,1,7.50
+80,2025-05-22,Cheeseburger,Lanche,Norte,4,34.90
+81,2025-05-01,Classic,Lanche,Oeste,2,29.90
+82,2025-05-08,Milk-shake,Sobremesa,Leste,5,18.90
+83,2025-05-15,Batata frita,Acompanhamento,Sul,3,13.90
+84,2025-05-22,Refrigerante,Bebida,Norte,1,7.50
+85,2025-06-01,Cheeseburger,Lanche,Norte,4,34.90
+86,2025-06-08,Classic,Lanche,Oeste,2,29.90
+87,2025-06-15,Milk-shake,Sobremesa,Leste,5,18.90
+88,2025-06-22,Batata frita,Acompanhamento,Sul,3,13.90
+89,2025-06-01,Refrigerante,Bebida,Norte,1,7.50
+90,2025-06-08,Cheeseburger,Lanche,Oeste,4,34.90
+91,2025-06-15,Classic,Lanche,Leste,2,29.90
+92,2025-06-22,Milk-shake,Sobremesa,Leste,5,18.90
+93,2025-06-01,Batata frita,Acompanhamento,Sul,3,13.90
+94,2025-06-08,Refrigerante,Bebida,Norte,1,7.50
+95,2025-06-15,Cheeseburger,Lanche,Oeste,4,34.90
+96,2025-06-22,Classic,Lanche,Leste,2,29.90
+97,2025-06-01,Milk-shake,Sobremesa,Sul,5,18.90
+98,2025-06-08,Batata frita,Acompanhamento,Norte,3,13.90
+99,2025-06-15,Refrigerante,Bebida,Norte,1,7.50
+100,2025-06-22,Cheeseburger,Lanche,Oeste,4,34.90
+101,2025-07-01,Classic,Lanche,Leste,2,29.90
+102,2025-07-08,Milk-shake,Sobremesa,Sul,5,18.90
+103,2025-07-15,Batata frita,Acompanhamento,Norte,3,13.90
+104,2025-07-22,Refrigerante,Bebida,Oeste,1,7.50
+105,2025-07-01,Cheeseburger,Lanche,Leste,4,34.90
+106,2025-07-08,Classic,Lanche,Leste,2,29.90
+107,2025-07-15,Milk-shake,Sobremesa,Sul,5,18.90
+108,2025-07-22,Batata frita,Acompanhamento,Norte,3,13.90
+109,2025-07-01,Refrigerante,Bebida,Oeste,1,7.50
+110,2025-07-08,Cheeseburger,Lanche,Leste,4,34.90
+111,2025-07-15,Classic,Lanche,Sul,2,29.90
+112,2025-07-22,Milk-shake,Sobremesa,Norte,5,18.90
+113,2025-07-01,Batata frita,Acompanhamento,Norte,3,13.90
+114,2025-07-08,Refrigerante,Bebida,Oeste,1,7.50
+115,2025-07-15,Cheeseburger,Lanche,Leste,4,34.90
+116,2025-07-22,Classic,Lanche,Sul,2,29.90
+117,2025-07-01,Milk-shake,Sobremesa,Norte,5,18.90
+118,2025-08-08,Batata frita,Acompanhamento,Oeste,3,13.90
+119,2025-08-15,Refrigerante,Bebida,Leste,1,7.50
+120,2025-08-22,Cheeseburger,Lanche,Leste,4,34.90
+121,2025-08-01,Classic,Lanche,Sul,2,29.90
+122,2025-08-08,Milk-shake,Sobremesa,Norte,5,18.90
+123,2025-08-15,Batata frita,Acompanhamento,Oeste,3,13.90
+124,2025-08-22,Refrigerante,Bebida,Leste,1,7.50
+125,2025-08-01,Cheeseburger,Lanche,Sul,4,34.90
+126,2025-08-08,Classic,Lanche,Norte,2,29.90
+127,2025-08-15,Milk-shake,Sobremesa,Norte,5,18.90
+128,2025-08-22,Batata frita,Acompanhamento,Oeste,3,13.90
+129,2025-08-01,Refrigerante,Bebida,Leste,1,7.50
+130,2025-08-08,Cheeseburger,Lanche,Sul,4,34.90
+131,2025-08-15,Classic,Lanche,Norte,2,29.90
+132,2025-08-22,Milk-shake,Sobremesa,Oeste,5,18.90
+133,2025-08-01,Batata frita,Acompanhamento,Leste,3,13.90
+134,2025-08-08,Refrigerante,Bebida,Leste,1,7.50
+135,2025-09-15,Cheeseburger,Lanche,Sul,4,34.90
+136,2025-09-22,Classic,Lanche,Norte,2,29.90
+137,2025-09-01,Milk-shake,Sobremesa,Oeste,5,18.90
+138,2025-09-08,Batata frita,Acompanhamento,Leste,3,13.90
+139,2025-09-15,Refrigerante,Bebida,Sul,1,7.50
+140,2025-09-22,Cheeseburger,Lanche,Norte,4,34.90
+141,2025-09-01,Classic,Lanche,Norte,2,29.90
+142,2025-09-08,Milk-shake,Sobremesa,Oeste,5,18.90
+143,2025-09-15,Batata frita,Acompanhamento,Leste,3,13.90
+144,2025-09-22,Refrigerante,Bebida,Sul,1,7.50
+145,2025-09-01,Cheeseburger,Lanche,Norte,4,34.90
+146,2025-09-08,Classic,Lanche,Oeste,2,29.90
+147,2025-09-15,Milk-shake,Sobremesa,Leste,5,18.90
+148,2025-09-22,Batata frita,Acompanhamento,Leste,3,13.90
+149,2025-09-01,Refrigerante,Bebida,Sul,1,7.50
+150,2025-09-08,Cheeseburger,Lanche,Norte,4,34.90
+151,2025-10-15,Classic,Lanche,Oeste,2,29.90
+152,2025-10-22,Milk-shake,Sobremesa,Leste,5,18.90
+153,2025-10-01,Batata frita,Acompanhamento,Sul,3,13.90
+154,2025-10-08,Refrigerante,Bebida,Norte,1,7.50
+155,2025-10-15,Cheeseburger,Lanche,Norte,4,34.90
+156,2025-10-22,Classic,Lanche,Oeste,2,29.90
+157,2025-10-01,Milk-shake,Sobremesa,Leste,5,18.90
+158,2025-10-08,Batata frita,Acompanhamento,Sul,3,13.90
+159,2025-10-15,Refrigerante,Bebida,Norte,1,7.50
+160,2025-10-22,Cheeseburger,Lanche,Oeste,4,34.90
+161,2025-10-01,Classic,Lanche,Leste,2,29.90
+162,2025-10-08,Milk-shake,Sobremesa,Leste,5,18.90
+163,2025-10-15,Batata frita,Acompanhamento,Sul,3,13.90
+164,2025-10-22,Refrigerante,Bebida,Norte,1,7.50
+165,2025-10-01,Cheeseburger,Lanche,Oeste,4,34.90
+166,2025-10-08,Classic,Lanche,Leste,2,29.90
+167,2025-10-15,Milk-shake,Sobremesa,Sul,5,18.90
+168,2025-11-22,Batata frita,Acompanhamento,Norte,3,13.90
+169,2025-11-01,Refrigerante,Bebida,Norte,1,7.50
+170,2025-11-08,Cheeseburger,Lanche,Oeste,4,34.90
+171,2025-11-15,Classic,Lanche,Leste,2,29.90
+172,2025-11-22,Milk-shake,Sobremesa,Sul,5,18.90
+173,2025-11-01,Batata frita,Acompanhamento,Norte,3,13.90
+174,2025-11-08,Refrigerante,Bebida,Oeste,1,7.50
+175,2025-11-15,Cheeseburger,Lanche,Leste,4,34.90
+176,2025-11-22,Classic,Lanche,Leste,2,29.90
+177,2025-11-01,Milk-shake,Sobremesa,Sul,5,18.90
+178,2025-11-08,Batata frita,Acompanhamento,Norte,3,13.90
+179,2025-11-15,Refrigerante,Bebida,Oeste,1,7.50
+180,2025-11-22,Cheeseburger,Lanche,Leste,4,34.90
+181,2025-11-01,Classic,Lanche,Sul,2,29.90
+182,2025-11-08,Milk-shake,Sobremesa,Norte,5,18.90
+183,2025-11-15,Batata frita,Acompanhamento,Norte,3,13.90
+184,2025-11-22,Refrigerante,Bebida,Oeste,1,7.50
+185,2025-12-01,Cheeseburger,Lanche,Leste,4,34.90
+186,2025-12-08,Classic,Lanche,Sul,2,29.90
+187,2025-12-15,Milk-shake,Sobremesa,Norte,5,18.90
+188,2025-12-22,Batata frita,Acompanhamento,Oeste,3,13.90
+189,2025-12-01,Refrigerante,Bebida,Leste,1,7.50
+190,2025-12-08,Cheeseburger,Lanche,Leste,4,34.90
+191,2025-12-15,Classic,Lanche,Sul,2,29.90
+192,2025-12-22,Milk-shake,Sobremesa,Norte,5,18.90
+193,2025-12-01,Batata frita,Acompanhamento,Oeste,3,13.90
+194,2025-12-08,Refrigerante,Bebida,Leste,1,7.50
+195,2025-12-15,Cheeseburger,Lanche,Sul,4,34.90
+196,2025-12-22,Classic,Lanche,Norte,2,29.90
+197,2025-12-01,Milk-shake,Sobremesa,Norte,5,18.90
+198,2025-12-08,Batata frita,Acompanhamento,Oeste,3,13.90
+199,2025-12-15,Refrigerante,Bebida,Leste,1,7.50
+200,2025-12-22,Cheeseburger,Lanche,Sul,4,34.90
