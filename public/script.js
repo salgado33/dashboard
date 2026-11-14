@@ -28,6 +28,35 @@ const decimalNumber = new Intl.NumberFormat("pt-BR", { minimumFractionDigits: 2,
 const dateFormat = new Intl.DateTimeFormat("pt-BR", { timeZone: "UTC" });
 const monthFormat = new Intl.DateTimeFormat("pt-BR", { month: "short", year: "numeric", timeZone: "UTC" });
 
+function chartThemeColors() {
+  const styles = getComputedStyle(document.documentElement);
+  return {
+    text: styles.getPropertyValue("--chart-text").trim(),
+    grid: styles.getPropertyValue("--chart-grid").trim()
+  };
+}
+
+function setTheme(theme, save = true) {
+  const isDark = theme === "dark";
+  document.documentElement.dataset.theme = isDark ? "dark" : "light";
+  const toggle = byId("theme-toggle");
+  toggle.setAttribute("aria-pressed", String(isDark));
+  toggle.setAttribute("aria-label", `Ativar tema ${isDark ? "claro" : "escuro"}`);
+  byId("theme-label").textContent = isDark ? "Claro" : "Escuro";
+  toggle.querySelector(".theme-icon").textContent = isDark ? "☀" : "☾";
+
+  if (save) {
+    try { localStorage.setItem("dashboard-theme", isDark ? "dark" : "light"); } catch { /* O tema continua funcionando sem armazenamento local. */ }
+  }
+  if (state.rows.length && window.Chart) updateCharts();
+}
+
+function initializeTheme() {
+  try {
+    if (localStorage.getItem("dashboard-theme") === "dark") setTheme("dark", false);
+  } catch { /* O tema claro é o padrão se o navegador bloquear armazenamento local. */ }
+}
+
 function setStatus(message, kind = "") {
   const status = byId("status-message");
   status.className = `status-message ${kind}`.trim();
@@ -218,11 +247,12 @@ function monthKeysBetween(first, last) {
 }
 
 function chartBaseOptions() {
+  const colors = chartThemeColors();
   return {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
-      legend: { display: true, position: "bottom", labels: { color: "#c0cad7", boxWidth: 8, boxHeight: 8, font: { size: 9 }, padding: 12 } },
+      legend: { display: true, position: "bottom", labels: { color: colors.text, boxWidth: 8, boxHeight: 8, font: { size: 9 }, padding: 12 } },
       tooltip: { callbacks: { label: (context) => ` ${money.format(context.raw)}` } }
     }
   };
@@ -230,7 +260,7 @@ function chartBaseOptions() {
 
 function heatColor(value, min, max) {
   const cold = [3, 7, 30];
-  const hot = [208, 0, 0];
+  const hot = [204, 24, 24];
   const ratio = max === min ? 0.5 : Math.max(0, Math.min(1, (value - min) / (max - min)));
   const channels = cold.map((start, index) => Math.round(start + (hot[index] - start) * ratio));
   return `#${channels.map((channel) => channel.toString(16).padStart(2, "0")).join("")}`;
@@ -250,6 +280,7 @@ function replaceChart(name, canvas, config) {
 
 function updateCharts() {
   const rows = state.filteredRows;
+  const colors = chartThemeColors();
   const monthTotals = new Map();
   const categoryTotals = new Map();
   const regionTotals = new Map();
@@ -296,8 +327,8 @@ function updateCharts() {
       ...common,
       interaction: { intersect: false, mode: "index" },
       scales: {
-        x: { grid: { display: false }, ticks: { color: "#aab6c5", font: { size: 9 }, maxRotation: 0 } },
-        y: { beginAtZero: true, grid: { color: "#29374a" }, ticks: { color: "#aab6c5", font: { size: 9 }, callback: (value) => money.format(value) } }
+        x: { grid: { display: false }, ticks: { color: colors.text, font: { size: 9 }, maxRotation: 0 } },
+        y: { beginAtZero: true, grid: { color: colors.grid }, ticks: { color: colors.text, font: { size: 9 }, callback: (value) => money.format(value) } }
       }
     }
   });
@@ -310,8 +341,8 @@ function updateCharts() {
     options: {
       ...common,
       scales: {
-        x: { grid: { display: false }, ticks: { color: "#aab6c5", font: { size: 9 } } },
-        y: { beginAtZero: true, grid: { color: "#29374a" }, ticks: { color: "#aab6c5", font: { size: 9 }, callback: (value) => money.format(value) } }
+        x: { grid: { display: false }, ticks: { color: colors.text, font: { size: 9 } } },
+        y: { beginAtZero: true, grid: { color: colors.grid }, ticks: { color: colors.text, font: { size: 9 }, callback: (value) => money.format(value) } }
       }
     }
   });
@@ -325,8 +356,8 @@ function updateCharts() {
       ...common,
       indexAxis: "y",
       scales: {
-        x: { beginAtZero: true, grid: { color: "#29374a" }, ticks: { color: "#aab6c5", font: { size: 9 }, callback: (value) => money.format(value) } },
-        y: { grid: { display: false }, ticks: { color: "#aab6c5", font: { size: 9 } } }
+        x: { beginAtZero: true, grid: { color: colors.grid }, ticks: { color: colors.text, font: { size: 9 }, callback: (value) => money.format(value) } },
+        y: { grid: { display: false }, ticks: { color: colors.text, font: { size: 9 } } }
       }
     }
   });
@@ -349,8 +380,8 @@ function updateCharts() {
       ...common,
       indexAxis: "y",
       scales: {
-        x: { beginAtZero: true, grid: { color: "#29374a" }, ticks: { color: "#aab6c5", font: { size: 9 }, callback: (value) => money.format(value) } },
-        y: { grid: { display: false }, ticks: { color: "#aab6c5", font: { size: 9 } } }
+        x: { beginAtZero: true, grid: { color: colors.grid }, ticks: { color: colors.text, font: { size: 9 }, callback: (value) => money.format(value) } },
+        y: { grid: { display: false }, ticks: { color: colors.text, font: { size: 9 } } }
       }
     }
   });
@@ -502,6 +533,9 @@ byId("search-filter").addEventListener("input", applyFilters);
 byId("clear-filters").addEventListener("click", clearFilters);
 byId("restore-demo").addEventListener("click", restoreDemo);
 byId("export-csv").addEventListener("click", exportFilteredCsv);
+byId("theme-toggle").addEventListener("click", () => {
+  setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+});
 byId("table-head").addEventListener("click", (event) => {
   const button = event.target.closest("button[data-sort]");
   if (!button) return;
@@ -510,6 +544,8 @@ byId("table-head").addEventListener("click", (event) => {
   state.sortKey = key;
   renderTable();
 });
+
+initializeTheme();
 
 if (window.Chart && window.Papa) {
   restoreDemo();
